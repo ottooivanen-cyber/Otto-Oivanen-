@@ -129,6 +129,22 @@ export const site: Content = {
           alt: "Otto Oivanen and a fellow VES board member in VES sweatshirts outside the Rewell centre in Vaasa",
         },
       },
+      {
+        name: "Redigroup: staffing agency",
+        period: "Kuopio, Finland",
+        role: "Co-founder. Responsible for sales, marketing and recruitment.",
+        // Sources: LinkedIn experience ("I was involved in founding a staffing agency together with a team.
+        //   My areas of responsibility included sales, marketing, and recruitment.");
+        //   company: Redigroup Oy, Kuopio, Y-tunnus 3371147-4 (https://www.asiakastieto.fi/yritykset/fi/redigroup-oy/33711474/taloustiedot)
+        summary: "A staffing agency I co-founded with a team.",
+        story: [
+          "I handled the commercial side: finding companies that needed people, marketing the agency, and recruiting the people we placed.",
+        ],
+        stats: [],
+        status: "Co-founded",
+        tags: ["Sales", "Recruitment", "Entrepreneurship"],
+        links: [],
+      },
     ],
   },
 
