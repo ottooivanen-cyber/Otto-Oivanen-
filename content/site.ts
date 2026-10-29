@@ -13,7 +13,7 @@ export const site: Content = {
     title: "Otto Oivanen",
     description:
       "Entrepreneur in Lund, Sweden. I build AI workers for businesses, run projects in public, and play professional volleyball.",
-    url: "https://ottooivanen-cyber.github.io/portfolio/",
+    url: "https://ottooivanen-cyber.github.io/Otto-Oivanen-/",
   },
 
   nav: {

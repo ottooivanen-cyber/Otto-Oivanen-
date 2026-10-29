@@ -4,7 +4,7 @@ import type { Photo } from "@/content/types";
 
 export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-/** Prefix a /public path with the deploy base path (GitHub Pages serves under /portfolio). */
+/** Prefix a /public path with the deploy base path (GitHub Pages serves under /<repo-name>). */
 export const asset = (p: string) => `${basePath}${p}`;
 
 /** Only returns the photo if its file exists in /public, so missing photos never render broken. */

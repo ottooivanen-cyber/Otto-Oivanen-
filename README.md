@@ -3,7 +3,7 @@
 One-page personal site. Next.js (App Router) + TypeScript + Tailwind, exported as static HTML.
 No database, no forms, no analytics.
 
-Live: https://ottooivanen-cyber.github.io/portfolio/
+Live: https://ottooivanen-cyber.github.io/Otto-Oivanen-/
 
 ## Edit
 
