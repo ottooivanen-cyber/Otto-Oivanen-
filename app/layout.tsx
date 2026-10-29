@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/inter";
 import "./globals.css";
 import { site as c } from "@/content/site";
-import { asset } from "@/lib/photo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(c.site.url),
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
     title: c.site.title,
     description: c.site.description,
     url: "/",
-    images: [{ url: asset("/og.png"), width: 1200, height: 630, alt: c.site.title }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: c.site.title }],
   },
   twitter: { card: "summary_large_image", title: c.site.title, description: c.site.description },
 };
