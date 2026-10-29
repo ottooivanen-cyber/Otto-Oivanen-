@@ -24,7 +24,7 @@ export const site: Content = {
     items: [
       { label: "Now", href: "#now" },
       { label: "Projects", href: "#projects" },
-      { label: "Thinking", href: "#thinking" },
+      { label: "Drive", href: "#thinking" },
       { label: "Services", href: "#services" },
       { label: "Volleyball", href: "#volleyball" },
       { label: "Contact", href: "#contact" },
@@ -129,62 +129,18 @@ export const site: Content = {
           alt: "Otto Oivanen and a fellow VES board member in VES sweatshirts outside the Rewell centre in Vaasa",
         },
       },
-      {
-        name: "Window-washing tour of Finland",
-        period: "Summer 2024",
-        role: "With a business partner.",
-        // Source: https://www.savonsanomat.fi/kaupalliset/7824412 (Savon Yrittäjät, 11.9.2024)
-        summary: "We drove around Finland, walked into businesses unannounced and offered to wash their windows, filming it all for TikTok.",
-        story: [
-          "The reception was mostly positive. The best day was in Turku, where we had made €500 by two in the morning.",
-        ],
-        stats: [
-          { value: "2,500 km", label: "driven" },
-          { value: "€500", label: "best day, Turku" },
-        ],
-        takeaway: "The first version of the idea that became Ikkunapojat.",
-        status: "Done",
-        tags: ["Sales", "Content"],
-        links: [],
-      },
     ],
   },
 
   thinking: {
-    heading: "How I think",
-    intro: "A few things I keep coming back to, in my own words.",
+    heading: "What drives me",
+    intro: "",
+    items: [],
     photo: { src: "/images/vaasa-interview.jpg", alt: "Otto Oivanen talking at a café table during an interview", position: "45% 40%" },
-    items: [
-      {
-        // Translated. Source: your Ikkunapojat wrap-up post.
-        quote: "When one plan falls apart, you come up with the next one on the spot.",
-        context: "On losing our gear in Málaga",
-      },
-      {
-        // Original English. Source: LinkedIn "Does AI make us stupid?"
-        quote: "When I use AI as a shortcut, I learn less. When I use it to challenge my thinking, I learn more.",
-        context: "On learning with AI",
-      },
-      {
-        // Translated. Source: Ikkunapojat announcement post.
-        quote: "Show the failures too, not just the wins.",
-        context: "The rule we set before Ikkunapojat",
-      },
-      {
-        // Translated. Source: https://www.savonsanomat.fi/kaupalliset/7824412
-        quote: "A salaried job doesn't suit my personality. I'm an entrepreneur at heart.",
-        context: "Savon Sanomat, 2024",
-      },
-      {
-        // Translated. Source: Ikkunapojat wrap-up post ("se selviää tekemällä").
-        quote: "I don't know exactly what it will look like yet. I'll find out by doing it.",
-        context: "On what comes next",
-      },
-    ],
   },
 
   goals: {
-    heading: "What I'm working toward",
+    heading: "What drives me",
     items: [
       // Your own words (chat, Oct 2026).
       "Make something cool with cool people.",

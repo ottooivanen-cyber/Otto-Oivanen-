@@ -184,33 +184,21 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How I think */}
-        <Section id="thinking" heading={thinking.heading} index="03" aside={thinking.intro}>
-          <div className={`grid gap-10 ${thinkingPhoto ? "lg:grid-cols-[minmax(0,1fr)_18rem]" : ""}`}>
-            <ul className="space-y-10">
-              {thinking.items.map((t) => (
-                <li key={t.quote}>
-                  <blockquote className="text-2xl leading-snug font-extralight tracking-tight text-fg sm:text-3xl">
-                    “{t.quote}”
-                  </blockquote>
-                  <p className="mt-3 text-sm text-faint">{t.context}</p>
+        {/* What drives me */}
+        <Section id="thinking" heading={thinking.heading} index="03">
+          <div className={`grid items-center gap-10 ${thinkingPhoto ? "lg:grid-cols-[minmax(0,1fr)_20rem]" : ""}`}>
+            <ol className="space-y-6">
+              {goals.items.map((g, i) => (
+                <li key={g} className="flex items-baseline gap-5 border-t border-line pt-6">
+                  <span className="font-mono text-sm text-faint" aria-hidden="true">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="text-2xl leading-snug font-extralight tracking-tight text-fg sm:text-4xl">{g}</span>
                 </li>
               ))}
-            </ul>
-            {thinkingPhoto && <Figure photo={thinkingPhoto} className="self-start" aspect="aspect-[3/4]" />}
+            </ol>
+            {thinkingPhoto && <Figure photo={thinkingPhoto} aspect="aspect-[3/4]" />}
           </div>
-
-          <h3 className="mt-20 mb-6 text-sm tracking-widest text-faint uppercase">{goals.heading}</h3>
-          <ol className="space-y-4">
-            {goals.items.map((g, i) => (
-              <li key={g} className="flex gap-5 border-t border-line pt-4 text-lg text-fg">
-                <span className="font-mono text-sm text-faint" aria-hidden="true">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                {g}
-              </li>
-            ))}
-          </ol>
         </Section>
 
         {/* Timeline */}
