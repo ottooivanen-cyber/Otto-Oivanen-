@@ -38,7 +38,7 @@ export const site: Content = {
       "I start things, build them in public and learn by doing. Right now that means AI workers for businesses, the next content project, and professional volleyball.",
     primaryCta: { label: "Work with me", href: "#contact" },
     secondaryCta: { label: "See projects", href: "#projects" },
-    photo: { src: "/images/portrait.jpg", alt: "Otto Oivanen sitting in front of a colourful graffiti mural", position: "32% 50%" },
+    photo: { src: "/images/portrait.jpg", alt: "Otto Oivanen sitting in front of a colourful graffiti mural" },
   },
 
   now: {
@@ -153,7 +153,7 @@ export const site: Content = {
   thinking: {
     heading: "How I think",
     intro: "A few things I keep coming back to, in my own words.",
-    photo: { src: "/images/vaasa-interview.jpg", alt: "Otto Oivanen talking at a café table during an interview" },
+    photo: { src: "/images/vaasa-interview.jpg", alt: "Otto Oivanen talking at a café table during an interview", position: "45% 40%" },
     items: [
       {
         // Translated. Source: your Ikkunapojat wrap-up post.

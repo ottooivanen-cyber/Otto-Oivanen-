@@ -44,7 +44,7 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
         </span>
       </div>
 
-      <div className={`mt-6 grid gap-10 ${photo ? "lg:grid-cols-[minmax(0,1fr)_20rem]" : ""}`}>
+      <div className={`mt-6 grid gap-10 ${photo ? "lg:grid-cols-[minmax(0,1fr)_24rem]" : ""}`}>
         <div className="min-w-0">
           <h3
             id={`project-${index}`}
@@ -60,7 +60,7 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
             ))}
           </div>
         </div>
-        {photo && <Figure photo={photo} aspect="aspect-[4/3] lg:aspect-[4/5]" />}
+        {photo && <Figure photo={photo} aspect="aspect-[4/3]" />}
       </div>
 
       {p.stats.length > 0 && (
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
             </div>
             {heroPhoto ? (
-              <Figure photo={heroPhoto} priority aspect="aspect-[4/3] md:aspect-[4/5]" />
+              <Figure photo={heroPhoto} priority aspect="aspect-[3/2]" />
             ) : (
               <HeroGraphic className="mx-auto w-full max-w-[22rem] md:max-w-none" />
             )}
