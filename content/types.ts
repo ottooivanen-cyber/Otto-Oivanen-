@@ -45,7 +45,7 @@ export type Content = {
   now: { heading: string; intro: string; items: { label: string; text: string }[] };
   projects: { heading: string; intro: string; items: Project[] };
   thinking: { heading: string; intro: string; items: { quote: string; context: string }[]; photo?: Photo };
-  goals: { heading: string; items: string[] };
+  goals: { heading: string; items: { title: string; text: string }[] };
   experience: {
     heading: string;
     facts?: { label: string; value: string }[];

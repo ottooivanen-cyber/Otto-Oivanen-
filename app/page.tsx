@@ -214,13 +214,16 @@ export default function Home() {
         {/* What drives me */}
         <Section id="thinking" heading={thinking.heading} index="03">
           <div className={`grid items-center gap-10 ${thinkingPhoto ? "lg:grid-cols-[minmax(0,1fr)_20rem]" : ""}`}>
-            <ol className="space-y-6">
+            <ol className="space-y-10">
               {goals.items.map((g, i) => (
-                <li key={g} className="flex items-baseline gap-5 border-t border-line pt-6">
+                <li key={g.title} className="grid gap-3 border-t border-line pt-8 sm:grid-cols-[2.5rem_minmax(0,1fr)]">
                   <span className="font-mono text-sm text-faint" aria-hidden="true">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="text-2xl leading-snug font-extralight tracking-tight text-fg sm:text-4xl">{g}</span>
+                  <div>
+                    <h3 className="text-2xl leading-snug font-light tracking-tight text-fg sm:text-3xl">{g.title}</h3>
+                    <p className="mt-3 max-w-xl text-lg leading-relaxed text-muted">{g.text}</p>
+                  </div>
                 </li>
               ))}
             </ol>

@@ -195,13 +195,20 @@ export const site: Content = {
 
   goals: {
     heading: "What drives me",
+    // Your own words (chat, Oct 2026), lightly edited.
     items: [
-      // Your own words (chat, Oct 2026).
-      "Make something cool with cool people.",
-      "Be a better version of myself every day.",
-      "Stay curious.",
-      // Source: LinkedIn demo-client post.
-      "Turn what I've learned about AI into real value for real businesses.",
+      {
+        title: "I want to become a founder",
+        text: "I want to build something cool, and every day I want to learn more. I'm ambitious, I love exploring the world, and I go looking for new challenges.",
+      },
+      {
+        title: "Volleyball taught me to get better every day",
+        text: "Years in the sport showed me that talent isn't enough. You show up, you execute, and tomorrow you execute a little better.",
+      },
+      {
+        title: "I want to leave the world better",
+        text: "My way to do that is to found a company that helps build the future.",
+      },
     ],
   },
 
