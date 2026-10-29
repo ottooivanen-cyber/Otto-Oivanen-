@@ -10,9 +10,10 @@ import type { Content } from "./types";
 
 export const site: Content = {
   site: {
-    title: "Otto Oivanen",
+    // Shown in search results and link previews only (not on the page).
+    title: "Otto Oivanen – Entrepreneur, builder and professional volleyball player",
     description:
-      "Entrepreneur in Lund, Sweden. I build AI workers for businesses, run projects in public, and play professional volleyball.",
+      "Otto Oivanen is a Finnish entrepreneur in Lund, Sweden: his projects, experience and what he's building now, from AI workers for businesses to professional volleyball.",
     url: "https://ottooivanen-cyber.github.io/Otto-Oivanen-/",
   },
 
@@ -25,7 +26,7 @@ export const site: Content = {
       { label: "Now", href: "#now" },
       { label: "Projects", href: "#projects" },
       { label: "Drive", href: "#thinking" },
-      { label: "Services", href: "#services" },
+      { label: "Timeline", href: "#timeline" },
       { label: "Volleyball", href: "#volleyball" },
       { label: "Contact", href: "#contact" },
     ],
@@ -36,7 +37,7 @@ export const site: Content = {
     name: "Otto Oivanen",
     tagline:
       "I start things, build them in public and learn by doing. Right now that means AI workers for businesses, the next content project, and professional volleyball.",
-    primaryCta: { label: "Work with me", href: "#contact" },
+    primaryCta: { label: "Get in touch", href: "#contact" },
     secondaryCta: { label: "See projects", href: "#projects" },
     photo: { src: "/images/portrait.jpg", alt: "Otto Oivanen sitting in front of a colourful graffiti mural" },
   },
@@ -206,6 +207,11 @@ export const site: Content = {
 
   experience: {
     heading: "Timeline",
+    facts: [
+      { label: "Based in", value: "Lund, Sweden" },
+      // Source: https://vaalit.yle.fi/vaalikone/kuntavaalit2025/95/ehdokkaat/6934 ("Kielitaito: suomi, ruotsi, englanti")
+      { label: "Languages", value: "Finnish (native), English, Swedish" },
+    ],
     items: [
       // Source: lundsvk.se
       { period: "2026 –", role: "Professional volleyball player", org: "Lunds VK, Sweden" },
@@ -222,28 +228,6 @@ export const site: Content = {
       // Source: Savon Sanomat 11.9.2024; fi.wikipedia (Savon Sanomat youth newsroom)
       { period: "2023 – 2024", role: "Youth newsroom", org: "Savon Sanomat" },
     ],
-  },
-
-  services: {
-    heading: "Work with me",
-    // Source: your LinkedIn post looking for demo clients.
-    intro:
-      "I'm looking for a few businesses to work with. If you have daily tasks that repeat, take a lot of time, or could be handled by an AI worker, I'd like to see what I can build for you.",
-    items: [
-      {
-        title: "AI worker",
-        body: "Handles several repetitive tasks for you, such as customer messages, work orders or booking requests.",
-      },
-      {
-        title: "Automations",
-        body: "Built around the tools and processes you already use, not a new system you have to learn.",
-      },
-      {
-        title: "How we start",
-        body: "A short call. We go through your daily tasks and what takes your time, then look at what can realistically be automated.",
-      },
-    ],
-    cta: { label: "Book a short call", href: "mailto:ottooivanen@gmail.com?subject=AI%20worker" },
   },
 
   volleyball: {
@@ -263,7 +247,7 @@ export const site: Content = {
 
   contact: {
     heading: "Contact",
-    body: "Clients, employers, event organisers, people with a crazy idea: email is the fastest way to reach me.",
+    body: "Recruiters, collaborators, event organisers, or a business that wants an AI worker: email is the fastest way to reach me.",
     email: "ottooivanen@gmail.com",
     profilesHeading: "Elsewhere",
     profiles: [

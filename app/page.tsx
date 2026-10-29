@@ -5,6 +5,7 @@ import { HeroGraphic } from "@/components/HeroGraphic";
 import { Section } from "@/components/Section";
 import { Figure } from "@/components/Figure";
 import { available } from "@/lib/photo";
+import { PersonJsonLd } from "@/components/PersonJsonLd";
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
   const external = href.startsWith("http");
@@ -127,13 +128,14 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
 }
 
 export default function Home() {
-  const { hero, now, projects, thinking, goals, experience, services, volleyball, contact, footer } = c;
+  const { hero, now, projects, thinking, goals, experience, volleyball, contact, footer } = c;
   const heroPhoto = available(hero.photo);
   const thinkingPhoto = available(thinking.photo);
   const volleyPhoto = available(volleyball.photo);
 
   return (
     <>
+      <PersonJsonLd />
       <Header nav={c.nav} />
 
       <main id="main">
@@ -228,6 +230,16 @@ export default function Home() {
 
         {/* Timeline */}
         <Section id="timeline" heading={experience.heading} index="04">
+          {experience.facts && (
+            <dl className="mb-12 grid gap-6 sm:grid-cols-2">
+              {experience.facts.map((f) => (
+                <div key={f.label}>
+                  <dt className="text-xs tracking-widest text-faint uppercase">{f.label}</dt>
+                  <dd className="mt-2 text-lg text-fg">{f.value}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
           <ol className="relative space-y-8 border-l border-line pl-6 sm:pl-8">
             {experience.items.map((e) => (
               <li key={e.role + e.org} className="relative">
@@ -246,28 +258,8 @@ export default function Home() {
           </ol>
         </Section>
 
-        {/* Services */}
-        <Section id="services" heading={services.heading} index="05">
-          <p className="max-w-2xl text-xl leading-relaxed font-light text-fg sm:text-2xl">{services.intro}</p>
-          <ul className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3">
-            {services.items.map((s) => (
-              <li key={s.title} className="bg-bg p-6 sm:p-8">
-                <h3 className="text-base text-fg">{s.title}</h3>
-                <p className="mt-3 leading-relaxed text-muted">{s.body}</p>
-              </li>
-            ))}
-          </ul>
-          <a
-            href={services.cta.href}
-            className="mt-10 inline-flex h-12 items-center rounded-full bg-fg px-6 text-sm font-medium text-bg transition-opacity hover:opacity-85"
-          >
-            {services.cta.label}
-            <span aria-hidden="true">&nbsp;→</span>
-          </a>
-        </Section>
-
         {/* Volleyball */}
-        <Section id="volleyball" heading={volleyball.heading} index="06">
+        <Section id="volleyball" heading={volleyball.heading} index="05">
           <div className={`grid items-start gap-10 ${volleyPhoto ? "sm:grid-cols-[minmax(0,1fr)_14rem]" : ""}`}>
             <div>
               <p className="max-w-2xl text-lg leading-relaxed font-light text-fg/90">{volleyball.text}</p>
@@ -285,7 +277,7 @@ export default function Home() {
         </Section>
 
         {/* Contact */}
-        <Section id="contact" heading={contact.heading} index="07">
+        <Section id="contact" heading={contact.heading} index="06">
           <p className="max-w-xl text-lg font-light text-fg/90">{contact.body}</p>
           <p className="mt-8">
             <span className="sr-only">Email: </span>

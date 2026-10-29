@@ -46,12 +46,10 @@ export type Content = {
   projects: { heading: string; intro: string; items: Project[] };
   thinking: { heading: string; intro: string; items: { quote: string; context: string }[]; photo?: Photo };
   goals: { heading: string; items: string[] };
-  experience: { heading: string; items: { period: string; role: string; org: string }[] };
-  services: {
+  experience: {
     heading: string;
-    intro: string;
-    items: { title: string; body: string }[];
-    cta: Link;
+    facts?: { label: string; value: string }[];
+    items: { period: string; role: string; org: string }[];
   };
   volleyball: { heading: string; text: string; facts: { label: string; value: string }[]; photo?: Photo };
   contact: {
