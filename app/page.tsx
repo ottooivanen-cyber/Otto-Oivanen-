@@ -63,6 +63,31 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
         {photo && <Figure photo={photo} aspect="aspect-[4/3]" />}
       </div>
 
+      {p.builds && p.builds.length > 0 && (
+        <ul className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
+          {p.builds.map((b) => (
+            <li key={b.name} className="bg-bg p-6">
+              <h4 className="text-base text-fg">
+                {b.href ? (
+                  <a
+                    href={b.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-line underline-offset-4 hover:decoration-fg"
+                  >
+                    {b.name}
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                ) : (
+                  b.name
+                )}
+              </h4>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{b.text}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+
       {p.stats.length > 0 && (
         <dl className="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-line pt-8 sm:grid-cols-3">
           {p.stats.map((s) => (

@@ -145,6 +145,43 @@ export const site: Content = {
         tags: ["Sales", "Recruitment", "Entrepreneurship"],
         links: [],
       },
+      {
+        name: "AI builds",
+        period: "2026",
+        role: "Mostly solo, some with friends.",
+        summary: "Short projects, from a few days to a few weeks each. I built them for fun and to learn how AI actually works. I love building.",
+        story: [],
+        builds: [
+          {
+            name: "AI war: an evolution simulation",
+            // Source: https://github.com/ottooivanen-cyber/ai-war ; LinkedIn post on the simulation.
+            text: "40 neural-network agents in a 2D world that search for food, fight and evolve generation by generation with a genetic algorithm. Python, numpy, pygame.",
+            href: "https://github.com/ottooivanen-cyber/ai-war",
+          },
+          {
+            name: "Two AI prototypes in two days",
+            // Source: https://www.linkedin.com/posts/otto-oivanen-71230329b_ai-machinelearning-buildinpublic-activity-7446278742013894656-TuQc
+            text: "With Anton Heinonen: a recruitment bot that analyses CVs with an LLM and runs a first interview (Next.js, Supabase), and a model that hears whether a hand mixer is broken (mel spectrograms, random forest, Flask).",
+            href: "https://www.linkedin.com/posts/otto-oivanen-71230329b_ai-machinelearning-buildinpublic-activity-7446278742013894656-TuQc",
+          },
+          {
+            name: "A daily AI tutor",
+            // Source: LinkedIn post "Does AI make us stupid?"
+            text: "A morning routine built with Claude that teaches me one thing about AI each day, remembers yesterday's lesson and checks what I understood.",
+            href: "https://www.linkedin.com/posts/otto-oivanen-71230329b_does-ai-make-us-stupid-maybe-if-we-use-activity-7495565438374797312-kpPT",
+          },
+          {
+            name: "AI short-video pipeline",
+            // Source: https://github.com/ottooivanen-cyber/MoneyPrinterTurbo (fork)
+            text: "Experimented with an open-source workflow that turns a topic into a finished short video automatically.",
+            href: "https://github.com/ottooivanen-cyber/MoneyPrinterTurbo",
+          },
+        ],
+        stats: [],
+        status: "For fun",
+        tags: ["AI", "Python", "Learning"],
+        links: [],
+      },
     ],
   },
 

@@ -23,6 +23,8 @@ export type Project = {
   stats: Stat[];
   /** Your own honest take: how it went, what you learned. */
   takeaway?: string;
+  /** Short list of smaller builds, shown as a grid. */
+  builds?: { name: string; text: string; href?: string }[];
   status: string;
   tags: string[];
   links: Link[];
