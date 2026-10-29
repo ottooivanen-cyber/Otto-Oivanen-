@@ -130,43 +130,6 @@ export const site: Content = {
         },
       },
       {
-        name: "Evolution simulation",
-        period: "2026",
-        role: "Solo project.",
-        // Sources: https://github.com/ottooivanen-cyber/ai-war ; your LinkedIn post about the simulation.
-        summary: "40 neural-network agents in a 2D world that search for food, fight and evolve, generation after generation.",
-        story: [
-          "Each agent is driven by a small neural network. A genetic algorithm (tournament selection, crossover, mutation, elitism, niching) breeds the next generation. It runs live in pygame or headless for fast evolution.",
-        ],
-        stats: [
-          { value: "40", label: "agents per world" },
-          { value: "Python", label: "numpy + pygame" },
-        ],
-        takeaway:
-          "Complex systems shouldn't be developed on intuition alone. Once every change was tested and backed by data, it became clear what actually moved the project forward.",
-        status: "In progress",
-        tags: ["AI", "Neural networks", "Python"],
-        links: [{ label: "GitHub", href: "https://github.com/ottooivanen-cyber/ai-war" }],
-      },
-      {
-        name: "Two AI prototypes in two days",
-        period: "Spring 2026",
-        role: "Built with Anton Heinonen.",
-        // Source: https://www.linkedin.com/posts/otto-oivanen-71230329b_ai-machinelearning-buildinpublic-activity-7446278742013894656-TuQc
-        summary: "An AI recruitment bot on Friday, an acoustic fault detector on Saturday.",
-        story: [
-          "Recruitment bot: LLM-based CV analysis, a structured view of each candidate's strengths and weaknesses, and a conversational first-round interview. Next.js and Supabase.",
-          "Acoustic diagnostics: recorded a working and a faulty hand mixer, turned the audio into mel spectrograms and trained a random-forest classifier to tell them apart. Flask backend with a light UI.",
-        ],
-        stats: [
-          { value: "2", label: "working prototypes" },
-          { value: "48h", label: "from idea to demo" },
-        ],
-        status: "Prototypes",
-        tags: ["AI", "LLMs", "Machine learning"],
-        links: [{ label: "LinkedIn post", href: "https://www.linkedin.com/posts/otto-oivanen-71230329b_ai-machinelearning-buildinpublic-activity-7446278742013894656-TuQc" }],
-      },
-      {
         name: "Window-washing tour of Finland",
         period: "Summer 2024",
         role: "With a business partner.",
@@ -182,21 +145,6 @@ export const site: Content = {
         takeaway: "The first version of the idea that became Ikkunapojat.",
         status: "Done",
         tags: ["Sales", "Content"],
-        links: [],
-      },
-      {
-        name: "A daily AI tutor",
-        period: "2026",
-        role: "Personal tool, built with Claude.",
-        // Source: your LinkedIn post "Does AI make us stupid?"
-        summary: "A morning routine that teaches me one thing about AI every day.",
-        story: [
-          "It remembers what I learned yesterday, checks what I understood and builds the next lesson on top of it: neural network basics one day, how language models process text the next.",
-        ],
-        stats: [],
-        takeaway: "I'm using AI to understand how AI itself works.",
-        status: "Daily use",
-        tags: ["AI", "Learning"],
         links: [],
       },
     ],
@@ -238,12 +186,12 @@ export const site: Content = {
   goals: {
     heading: "What I'm working toward",
     items: [
+      // Your own words (chat, Oct 2026).
+      "Make something cool with cool people.",
+      "Be a better version of myself every day.",
+      "Stay curious.",
       // Source: LinkedIn demo-client post.
-      "Turn a year of building with AI into real value for real businesses.",
-      // Source: Ikkunapojat wrap-up post.
-      "Keep combining entrepreneurship and content, and make the next project bigger than the last.",
-      // Source: LinkedIn posts on the simulation and the AI tutor.
-      "Understand how AI actually works, not just use the tools.",
+      "Turn what I've learned about AI into real value for real businesses.",
     ],
   },
 
@@ -252,6 +200,8 @@ export const site: Content = {
     items: [
       // Source: lundsvk.se
       { period: "2026 –", role: "Professional volleyball player", org: "Lunds VK, Sweden" },
+      // Source: LinkedIn (current experience); role from you.
+      { period: "Now", role: "Sales and customer service representative", org: "IGO Promo Nordics" },
       // Source: VES board post
       { period: "2026", role: "Board member, Partnerships", org: "Vaasa Entrepreneurship Society" },
       // Source: LinkedIn; fi.wikipedia
@@ -313,7 +263,6 @@ export const site: Content = {
       { label: "TikTok", href: "https://www.tiktok.com/@ottooivanenn" },
       // Linked from your Linktree (linktr.ee/ottooivanen).
       { label: "YouTube", href: "https://www.youtube.com/@Ikkunapojat" },
-      { label: "GitHub", href: "https://github.com/ottooivanen-cyber" },
     ],
   },
 
